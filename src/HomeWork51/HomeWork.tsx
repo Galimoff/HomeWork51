@@ -1,15 +1,15 @@
 import React from 'react';
 
 interface RandomNumberProps extends React.PropsWithChildren {
-  number: number;
-}
+  numeral: number;
+ }
 
 const RandomNumber: React.FC<RandomNumberProps> = (props) =>  {
   return (
     <div className="random">
-      <p>{props.number}</p>
-      <p>{props.children}</p>
-          </div>
+      <h1>{props.children}</h1>
+      <p>{props.numeral}</p>
+               </div>
   );
 };
 
